@@ -1,0 +1,7 @@
+# macOS Finder noise
+.DS_Store
+
+# PyCharm / JetBrains IDE
+.idea/
+*.iml
+__pycache__/
