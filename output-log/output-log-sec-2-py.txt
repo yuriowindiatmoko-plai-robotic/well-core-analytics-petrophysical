@@ -1,0 +1,12 @@
+C:\Users\ASUS\miniconda3\envs\tes-conda-env-1\python.exe C:\Users\ASUS\MY_FOLDER\WORKDIR\tes-conda-env-1\section2.py 
+
+============================================================
+Section 2 - Well Plot (simple + advanced)
+============================================================
+  -> saved output\s02_well_plot_simple.jpg
+  Advanced well plot ...
+  -> saved output\s02_well_plot_advanced.jpg
+
+Done. JPGs are in the output folder.
+
+Process finished with exit code 0

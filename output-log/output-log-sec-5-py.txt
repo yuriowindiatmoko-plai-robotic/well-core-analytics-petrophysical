@@ -1,0 +1,66 @@
+C:\Users\ASUS\miniconda3\envs\tes-conda-env-1\python.exe C:\Users\ASUS\MY_FOLDER\WORKDIR\tes-conda-env-1\section5.py 
+
+============================================================
+Section 5 - Unsupervised Clustering
+============================================================
+            DEPTH_MD  ...  FORCE_2020_LITHOFACIES_CONFIDENCE
+count  133198.000000  ...                      133183.000000
+mean     1792.944663  ...                           1.235796
+std       739.441515  ...                           0.480781
+min       415.261599  ...                           1.000000
+25%      1182.822400  ...                           1.000000
+50%      1747.524495  ...                           1.000000
+75%      2413.874901  ...                           1.000000
+max      3272.024000  ...                           3.000000
+
+[8 rows x 26 columns]
+  -> saved output\s05_facetgrid_lithology.jpg
+index  wellname
+0      15/9-13
+1      15/9-15
+2      15/9-17
+3      16/1-2
+4      16/1-6 A
+5      16/10-1
+6      16/10-2
+7      16/10-3
+8      16/10-5
+9      16/11-1 ST3
+10      16/2-11 A
+11      16/2-16
+           DEPTH_MD          RDEP  ...        FACIES       LITH_SI
+count  82732.000000  82732.000000  ...  82732.000000  82732.000000
+mean    2026.091770      1.949349  ...  62691.493352      3.355848
+std      622.447842     16.295946  ...  13172.216175      1.671553
+min      705.550396      0.123068  ...  30000.000000      1.000000
+25%     1516.358446      0.737603  ...  65000.000000      3.000000
+50%     2010.897600      1.098597  ...  65000.000000      3.000000
+75%     2569.647947      1.771478  ...  65030.000000      3.000000
+max     3198.760000   1856.935059  ...  99000.000000     11.000000
+
+[8 rows x 9 columns]
+  -> saved output\s05_elbow_method.jpg
+
+
+
+  -> saved output\s05_silhouette_scores.jpg
+  -> saved output\s05_silhouette_visualizer_k10.jpg
+index  wellname
+0      15/9-13
+1      15/9-15
+2      15/9-17
+3      16/1-6 A
+4      16/10-1
+5      16/10-2
+6      16/10-3
+7      16/10-5
+8      16/2-11 A
+9      16/2-16
+  -> saved output\s05_wellplot_16_10-1.jpg
+  -> saved output\s05_crossplot_kmeans_gmm_lith.jpg
+  -> saved output\s05_pairplot_kmeans.jpg
+  -> saved output\s05_pairplot_gmm.jpg
+
+Done. JPGs are in the output folder.
+
+Process finished with exit code 0

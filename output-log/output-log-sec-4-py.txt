@@ -1,0 +1,71 @@
+C:\Users\ASUS\miniconda3\envs\tes-conda-env-1\python.exe C:\Users\ASUS\MY_FOLDER\WORKDIR\tes-conda-env-1\section4.py 
+
+============================================================
+Section 4 - Core Data & Poro-Perm Relationship
+============================================================
+     DEPTH  OrigDepth  CORE_NO  SAMPLE   CKHG  ...  CPORV    So    Sw   CGD  CGDV
+0  3838.60    3837.00        1       1  13.80  ...    NaN   NaN   NaN  2.66   NaN
+1  3838.85    3837.25        1       2    NaN  ...    NaN   NaN   NaN  2.67   NaN
+2  3839.15    3837.55        1       3  25.20  ...    NaN   NaN   NaN  2.69   NaN
+3  3839.40    3837.80        1       4   1.02  ...    NaN   NaN   NaN  2.70   NaN
+4  3839.48    3837.88        1       5    NaN  ...   18.8  52.9  36.4   NaN  2.68
+
+[5 rows x 14 columns]
+             DEPTH    OrigDepth    CORE_NO  ...         Sw         CGD       CGDV
+count   728.000000   728.000000  728.00000  ...  71.000000  594.000000  71.000000
+mean   3920.528338  3920.153338    3.93956  ...  28.309859    2.653569   2.656901
+std      46.545695    46.902816    1.75976  ...  19.203758    0.046735   0.035560
+min    3838.600000  3837.000000    1.00000  ...   4.500000    2.250000   2.620000
+25%    3882.580000  3881.980000    3.00000  ...  18.200000    2.640000   2.630000
+50%    3921.725000  3921.125000    4.00000  ...  22.800000    2.650000   2.650000
+75%    3960.287500  3960.487500    5.00000  ...  29.950000    2.660000   2.660000
+max    3999.950000  3999.750000    7.00000  ...  90.800000    3.030000   2.810000
+
+[8 rows x 14 columns]
+  -> saved output\s04_poro_perm_linear.jpg
+  -> saved output\s04_poro_perm_logy.jpg
+  -> saved output\s04_poro_perm_polished.jpg
+  (dropped 171 rows with missing/zero/negative CPOR or CKHG before regression)
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:                      y   R-squared (uncentered):                   0.793
+Model:                            OLS   Adj. R-squared (uncentered):              0.793
+Method:                 Least Squares   F-statistic:                              2129.
+Date:                Mon, 29 Jun 2026   Prob (F-statistic):                   2.80e-192
+Time:                        20:06:16   Log-Likelihood:                         -726.48
+No. Observations:                 557   AIC:                                      1455.
+Df Residuals:                     556   BIC:                                      1459.
+Df Model:                           1                                                  
+Covariance Type:            nonrobust                                                  
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+x1             0.0949      0.002     46.145      0.000       0.091       0.099
+==============================================================================
+Omnibus:                        9.398   Durbin-Watson:                   0.654
+Prob(Omnibus):                  0.009   Jarque-Bera (JB):                7.595
+Skew:                           0.198   Prob(JB):                       0.0224
+Kurtosis:                       2.588   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+  Slope=0.174287  Intercept=-1.556078
+  -> saved output\s04_poro_perm_regression.jpg
+             DEPTH    OrigDepth    CORE_NO  ...         CGD       CGDV     PRED_PERM
+count   728.000000   728.000000  728.00000  ...  594.000000  71.000000    593.000000
+mean   3920.528338  3920.153338    3.93956  ...    2.653569   2.656901    365.256296
+std      46.545695    46.902816    1.75976  ...    0.046735   0.035560   2612.359270
+min    3838.600000  3837.000000    1.00000  ...    2.250000   2.620000      0.088993
+25%    3882.580000  3881.980000    3.00000  ...    2.640000   2.630000      3.430571
+50%    3921.725000  3921.125000    4.00000  ...    2.650000   2.650000     39.675042
+75%    3960.287500  3960.487500    5.00000  ...    2.660000   2.660000    168.248332
+max    3999.950000  3999.750000    7.00000  ...    3.030000   2.810000  52270.366485
+
+[8 rows x 15 columns]
+  -> saved output\s04_measured_vs_predicted.jpg
+
+Done. JPGs are in the output folder.
+
+Process finished with exit code 0

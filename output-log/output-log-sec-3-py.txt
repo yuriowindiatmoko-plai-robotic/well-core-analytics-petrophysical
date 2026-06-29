@@ -1,0 +1,14 @@
+C:\Users\ASUS\miniconda3\envs\tes-conda-env-1\python.exe C:\Users\ASUS\MY_FOLDER\WORKDIR\tes-conda-env-1\section3.py 
+
+============================================================
+Section 3 - Histograms & Crossplots
+============================================================
+  -> saved output\s03_gr_hist_stats.jpg
+  -> saved output\s03_all_distributions.jpg
+  -> saved output\s03_nphi_rhob_ylordr.jpg
+  -> saved output\s03_3d_scatter.jpg
+  -> saved output\s03_four_panel_crossplots.jpg
+
+Done. JPGs are in the output folder.
+
+Process finished with exit code 0
